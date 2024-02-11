@@ -12,6 +12,6 @@ public class while1 {
             System.out.println("i = " + i);
             i++;
         }
-        System.out.println(sum);
+          System.out.println(sum);
     }
 }
