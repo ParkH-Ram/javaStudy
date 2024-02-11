@@ -1,5 +1,7 @@
 package loop.ex;
 
+import java.util.Scanner;
+
 public class loopEx1 {
     public static void main(String[] args) {
         /**
@@ -40,6 +42,49 @@ public class loopEx1 {
             for(int j=1; j<=9; j++){
                 System.out.println(i + "*" + j + " = " + i*j);
             }
+        }
+
+        Scanner sc = new Scanner(System.in);
+        int row = sc.nextInt();
+
+        // 삼각형
+        for(int i=1; i<=row;i++){
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // 역삼각형
+        for(int i=1; i<=row; i++){
+            for(int j=row; j>=i; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // 정삼각형
+        for(int i=1; i<=row; i++){
+            for(int j=i; j<row; j++){
+                System.out.printf(" ");
+            }
+            // k는 홀수로 출력하기 위해 i의 수에 *2 - 1함
+            for(int k=1; k<=i*2-1; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // 역 정삼각형
+        for(int i=row; i>= 1; i--){
+            for(int j=i; j<row; j++){
+                System.out.print(" ");
+            }
+
+            for(int k=1; k<=i*2-1; k++){
+                System.out.printf("*");
+            }
+            System.out.println();
         }
     }
 }
