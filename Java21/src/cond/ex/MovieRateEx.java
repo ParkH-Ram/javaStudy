@@ -2,7 +2,7 @@ package cond.ex;
 
 import java.util.Scanner;
 
-public class CondEx2 {
+public class MovieRateEx {
     public static void main(String[] args) {
 
         /**
@@ -16,12 +16,12 @@ public class CondEx2 {
          * */
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("입력 하는 평점 이상의 영화만 추천 합니다. ( 1~10 )");
+        System.out.println("입력 하는 평점 이상의 영화만 추천 합니다. ( 1~10)");
         double rating = sc.nextDouble();
         rating = Math.round(rating * 10) / 10;
 
-        if( rating >= 9.0) System.out.println("'토이스토리'를 추천합니다.");
-        else if(9.0 > rating && rating >= 8.0 ) System.out.println("'토이스토리'와 '어바웃타임'을 추천합니다.");
-        else if(8.0 > rating && rating >= 7.0 ) System.out.println("'토이스토리'와 '어바웃타임'과 '고질라'를 추천합니다.");
+        if (rating >= 9.0) System.out.println("'토이스토리'를 추천합니다.");
+        if (rating >= 8.0) System.out.println("'어바웃타임'을 추천합니다.");
+        if (rating >= 7.0) System.out.println("'고질라'를 추천합니다.");
     }
 }

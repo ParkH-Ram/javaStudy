@@ -2,7 +2,7 @@ package cond.ex;
 
 import java.util.Scanner;
 
-public class CondEx1 {
+public class scoreEx {
 
     public static void main(String[] args) {
         /** 학점풀이 계산
@@ -14,9 +14,9 @@ public class CondEx1 {
         int score = sc.nextInt();
 
         if(score >= 90) System.out.printf("학점은 %c 입니다.",'A');
-        else if(90 > score  &&  score >= 80) System.out.printf("학점은 %c 입니다.",'B');
-        else if(80 > score  &&  score >= 70) System.out.printf("학점은 %c 입니다.",'C');
-        else if(70 > score  &&  score >= 60) System.out.printf("학점은 %c 입니다.",'D');
+        else if(score>= 80) System.out.printf("학점은 %c 입니다.",'B');
+        else if(score >= 70) System.out.printf("학점은 %c 입니다.",'C');
+        else if(score >= 60) System.out.printf("학점은 %c 입니다.",'D');
         else System.out.printf("학점은 %c 입니다.", 'F');
 
 

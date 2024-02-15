@@ -22,6 +22,17 @@ public class loopEx1 {
         }
 
         /**
+         * sum 계산
+         *
+         * **/
+        int num2 = 0;
+        int max = 100;
+        for(int i=1; i<=max; i++){
+            num2 += i;
+        }
+        System.out.println(num2);
+
+        /**
          *짝수 출력 num 이라는 변수 사용
          * **/
 
