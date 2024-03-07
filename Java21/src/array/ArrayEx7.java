@@ -15,7 +15,7 @@ public class ArrayEx7 {
         double [] aveArray = new double[4];
 
         for(int i=0; i<4; i++){
-            System.out.println(i+1 + "번 학생의 성적을 입력하세요 : ");
+            System.out.println(i+1+ "번 학생의 성적을 입력하세요 : ");
 
             for(int j=0; j<3; j++){
                 if(j==0) {
