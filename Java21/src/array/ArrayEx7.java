@@ -31,7 +31,7 @@ public class ArrayEx7 {
                 if(j==2) {
                     System.out.print("수학 점수 : ");
                     array[i][2] = sc.nextInt();
-                    sumArray[i] += array[i][2];
+                    sumArray[i] += array[i][2] ;
                 }
 
                 aveArray[i] = (double)sumArray[i]/3;
