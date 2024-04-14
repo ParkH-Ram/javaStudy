@@ -44,7 +44,7 @@ public class ArrayEx9 {
                     continue;
                 }
                 for(int i=0; i<productCount; i++){
-                    System.out.println(productName[i] + ": " + productPrices[i]);
+                    System.out.println(productName[i] + ":  " + productPrices[i]);
                 }
             }
 
